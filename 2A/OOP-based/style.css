@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+  --primary-color: linear-gradient(to right, #80ffdb, #64dfdf);
+  --success-color: #28df99;
+  --error-color: #c70039;
+  --dark-text: #111d5e;
+  --primary-text: #eb596e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.show {
+  visibility: visible !important;
+}
+
+.success {
+  border: 2px solid var(--success-color) !important;
+}
+
+.error {
+  border: 2px solid var(--error-color) !important;
+}
+
+.hero {
+  padding: 30px 20px;
+  background: var(--primary-color);
+}
+
+.hero__title {
+  color: var(--dark-text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 75%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: 200px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.form-control {
+  width: 50%;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 1px solid #777;
+}
+
+.form-control + small {
+  visibility: hidden;
+  margin-top: 10px;
+  color: var(--error-color);
+}
+
+#target {
+  background: var(--primary-color);
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+#target h3 {
+  color: var(--primary-text);
+  font-size: 1.5em;
+}
